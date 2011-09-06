@@ -1,4 +1,4 @@
-# Kohana Auth driver for Jelly
+# Jelly driver for Kohana Auth
 
 The Auth driver is the official [Kohana ORM](https://github.com/kohana/orm) Auth driver modified for [Jelly](https://github.com/creatoro/jelly).
 
