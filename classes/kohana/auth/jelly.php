@@ -64,6 +64,12 @@ class Kohana_Auth_Jelly extends Auth {
 	 */
 	protected function _login($user, $password, $remember)
 	{
+		if (is_string($password))
+		{
+			// Create a hashed password
+			$password = $this->hash($password);
+		}
+
 		if ( ! is_object($user))
 		{
 			$username = $user;
