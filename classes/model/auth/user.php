@@ -21,8 +21,6 @@ class Model_Auth_User extends Jelly_Model {
 				'label' => 'email address',
 				'rules' => array(
 					array('not_empty'),
-					array('min_length', array(':value', 4)),
-					array('max_length', array(':value', 127)),
 				),
 				'unique' => TRUE,
 			)),
@@ -30,9 +28,7 @@ class Model_Auth_User extends Jelly_Model {
 				'label' => 'username',
 				'rules' => array(
 					array('not_empty'),
-					array('min_length', array(':value', 4)),
 					array('max_length', array(':value', 32)),
-					array('regex', array(':value', '/^[-\pL\pN_.]++$/uD')),
 				),
 				'unique' => TRUE,
 			)),
